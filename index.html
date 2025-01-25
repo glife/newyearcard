@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HAPPY NEW YEAR!</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="stars"></div>
+
+    <div class="maincontainer">
+        <div class="thecard">
+            <div class="thefront">
+                <h2 class="front-title">GOODBYE 2024!</h2>
+                <button class="flip-btn" onclick="flipCard()">Click to See Your Message</button>
+                <h2 class="front-title animated-welcome">Welcome 2025!</h2>
+            </div>
+            <div class="theback">
+                <div class ="message-hehe">
+                <div class="back-title">
+                    <h2>
+                        <span style="--i:1;">H</span>
+                        <span style="--i:2;">A</span>
+                        <span style="--i:3;">P</span>
+                        <span style="--i:4;">P</span>
+                        <span style="--i:5;">Y</span>
+                        <span style="--i:7;margin-left:1vw;">N</span>
+                        <span style="--i:8;">E</span>
+                        <span style="--i:9;">W</span>
+                        <span style="--i:11;margin-left:1vw;">Y</span>
+                        <span style="--i:12;">E</span>
+                        <span style="--i:13;">A</span>
+                        <span style="--i:14;">R</span>
+                    </h2>
+                </div>
+
+                <div class="message1">
+                    
+                    <div>
+                        <div class="login-form">
+                            <p>Enter your username and password to reveal your custom message:</p>
+                            <input type="text" id="username" placeholder="Username" required><br>
+                            <input type="password" id="password" placeholder="Password" required><br>
+                            <button class="submit-btn" onclick="loginAndPlay()">Submit</button>
+                        </div>
+
+                        <div id="cardMessage" style="display: none; margin-top: 20px;">
+                            <p id="personalMessage" style="font-size: 20px; color: #ffffff;"></p>
+                        </div>
+
+                        <audio id="songPlayer" autoplay loop style="display: none;"></audio>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
